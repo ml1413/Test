@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<FrameLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,219 +9,189 @@
     android:background="@color/white"
     tools:context=".BlankFragment">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="-514dp"
-        android:layout_marginTop="-500dp"
-        android:layout_marginEnd="-500dp"
-        android:layout_marginBottom="-515dp"
-        app:layout_constraintBottom_toBottomOf="@+id/materialCardView3"
-        app:layout_constraintEnd_toEndOf="@+id/materialCardView3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/materialCardView3"
-        app:layout_constraintTop_toTopOf="@+id/materialCardView3"
-        app:layout_constraintVertical_bias="0.0"
-        app:lottie_autoPlay="true"
-        app:lottie_colorFilter="@color/stroke_color"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/dashboard_animation" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="-514dp"
+            android:layout_marginTop="-500dp"
+            android:layout_marginEnd="-500dp"
+            android:layout_marginBottom="-515dp"
+            app:layout_constraintBottom_toBottomOf="@+id/materialCardView3"
+            app:layout_constraintEnd_toEndOf="@+id/materialCardView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/materialCardView3"
+            app:layout_constraintTop_toTopOf="@+id/materialCardView3"
+            app:layout_constraintVertical_bias="0.0"
+            app:lottie_autoPlay="true"
+            app:lottie_colorFilter="@color/stroke_color"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/dashboard_animation" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="1000000dp"
-        app:cardElevation="32dp"
-        app:layout_constraintDimensionRatio="1"
-        app:layout_constraintEnd_toEndOf="@id/guidelineR"
-        app:layout_constraintStart_toStartOf="@id/guidelinel"
-        app:layout_constraintTop_toTopOf="@id/guidelineTop"
-        app:strokeColor="@color/stroke_color"
-        app:strokeWidth="8dp">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="1000000dp"
+            app:cardElevation="32dp"
+            app:layout_constraintDimensionRatio="1"
+            app:layout_constraintEnd_toEndOf="@id/guidelineR"
+            app:layout_constraintStart_toStartOf="@id/guidelinel"
+            app:layout_constraintTop_toTopOf="@id/guidelineTop"
+            app:strokeColor="@color/stroke_color"
+            app:strokeWidth="8dp">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="18dp"
-                android:src="@drawable/im123"
-                app:layout_constraintBottom_toBottomOf="@id/guidelineCardTop"
-                app:layout_constraintDimensionRatio="1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:gravity="center"
-                android:text="Scan"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@color/my_blue"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@id/guidelineCardTBottom"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@id/guidelineCardTop" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@drawable/baseline_info_24"
-                    app:tint="@android:color/holo_red_dark" />
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/im123"
+                    app:layout_constraintBottom_toBottomOf="@id/guidelineCardTop"
+                    app:layout_constraintDimensionRatio="1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="Scan"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@color/my_blue"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/guidelineCardTBottom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/guidelineCardTop" />
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingStart="4dp"
-                    android:text="12 Problem"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@android:color/holo_red_dark"
-                    android:textStyle="bold" />
-            </LinearLayout>
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
 
-            <!--Guideline__________________________________________________-->
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineCardTop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.5" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/baseline_info_24"
+                        app:tint="@android:color/holo_red_dark" />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineCardTBottom"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintGuide_percent="0.65" />
-            <!--Guideline__________________________________________________-->
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="4dp"
+                        android:text="12 Problem"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/holo_red_dark"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--Guideline__________________________________________________-->
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineCardTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guidelineCardTBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.65" />
+                <!--Guideline__________________________________________________-->
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    </com.google.android.material.card.MaterialCardView>
-    <!--Card and button -->
-    <LinearLayout
+        </com.google.android.material.card.MaterialCardView>
+        <!--Card and button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/guidelineBot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guidelineCenter">
+
+            <include
+                android:id="@+id/card_drive_scan"
+                layout="@layout/card_and_button" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/card_check_virus"
+                layout="@layout/card_and_button" />
+
+        </LinearLayout>
+        <!--Guideline__________________________________________________-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.08" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.77" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelinel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+        <!--Guideline__________________________________________________-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--Bottom sheet________________________________-->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/guidelineBot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineCenter">
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
 
         <include
-            android:id="@+id/card_drive_scan"
-            layout="@layout/card_and_button" />
+            android:id="@+id/include_sheet"
+            layout="@layout/bottom_sheet" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <!--Bottom sheet________________________________-->
 
-        <Space
-            android:layout_width="8dp"
-            android:layout_height="wrap_content" />
-
-        <include
-            android:id="@+id/card_check_virus"
-            layout="@layout/card_and_button" />
-        <!--   <androidx.cardview.widget.CardView
-               android:layout_width="0dp"
-               android:layout_height="match_parent"
-               android:layout_weight="1"
-               app:cardCornerRadius="24dp"
-               app:cardElevation="0dp">
-
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:padding="12dp"
-                   android:orientation="vertical">
-
-                   <ImageView
-                       android:layout_width="48dp"
-                       android:layout_height="48dp"
-                       android:layout_weight="1"
-                       android:src="@drawable/hdd" />
-
-                   <TextView
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Drive Scan"
-                       android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                       android:textStyle="bold" />
-
-                   <TextView
-                       android:layout_width="wrap_content"
-                       android:layout_height="wrap_content"
-                       android:text="Show you all info about phone"
-                       android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                       android:textColor="@android:color/darker_gray" />
-
-                   <TextView
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:layout_weight="1"
-                       android:background="@drawable/rectangle_for_button"
-                       android:gravity="center"
-                       android:text="Scan"
-                       android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                       android:textColor="@color/white"
-                       android:textStyle="bold" />
-               </LinearLayout>
-
-
-           </androidx.cardview.widget.CardView>-->
-    </LinearLayout>
-    <!--Guideline__________________________________________________-->
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.08" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineCenter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.40" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineBot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.77" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelinel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.25" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.75" />
-    <!--Guideline__________________________________________________-->
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
