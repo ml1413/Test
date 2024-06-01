@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Test</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    //card Drive scan
+    <string name="devise_scan">Devise scan</string>
+    <string name="show">Show you all info about phone</string>
+    <string name="text_button_scan">Scan</string>
+    //card check virus
+    <string name="check_viruses">Check for Viruses</string>
+    <string name="show_you_all_info">Show you all info about phone</string>
+    <string name="check">Check</string>
+</resources>

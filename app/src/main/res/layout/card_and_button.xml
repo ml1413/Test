@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/baseline_info_24" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="Label"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/darker_gray"
+            tools:text="Show you all info about phone" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_background"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Button"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
