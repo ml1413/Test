@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="stroke_color">#E5E9FC</color>
     <color name="my_blue">#285FF6</color>
+    <color name="dashboard_color">#F4F6FA</color>
 </resources>
