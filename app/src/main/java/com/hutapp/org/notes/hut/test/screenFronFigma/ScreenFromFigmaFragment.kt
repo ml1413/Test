@@ -1,4 +1,4 @@
-package com.hutapp.org.notes.hut.test
+package com.hutapp.org.notes.hut.test.screenFronFigma
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.hutapp.org.notes.hut.test.R
 import com.hutapp.org.notes.hut.test.databinding.FragmentBlankBinding
-import com.hutapp.org.notes.hut.test.model.ListForItem
-import com.hutapp.org.notes.hut.test.recyclerView.MyRecyclerAdapter
+import com.hutapp.org.notes.hut.test.screenFronFigma.model.ListForItem
+import com.hutapp.org.notes.hut.test.screenFronFigma.recyclerView.MyRecyclerAdapter
 
-class BlankFragment : Fragment() {
+class ScreenFromFigmaFragment : Fragment() {
 
     private lateinit var binding: FragmentBlankBinding
     private lateinit var myRecyclerAdapter: MyRecyclerAdapter
@@ -20,7 +21,6 @@ class BlankFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentBlankBinding.inflate(inflater, container, false)
-        initRecyclerView()
         return binding.root
     }
 
@@ -34,6 +34,7 @@ class BlankFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initRecyclerView()
         nitIncludeCardScan()
         nitIncludeCardCheck()
     }

@@ -1,4 +1,4 @@
-package com.hutapp.org.notes.hut.test.model
+package com.hutapp.org.notes.hut.test.screenFronFigma.model
 
 data class ModelIdem(
     val image: Int,

@@ -1,4 +1,4 @@
-package com.hutapp.org.notes.hut.test.recyclerView
+package com.hutapp.org.notes.hut.test.screenFronFigma.recyclerView
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.hutapp.org.notes.hut.test.R
 import com.hutapp.org.notes.hut.test.databinding.ItemBinding
-import com.hutapp.org.notes.hut.test.model.ModelIdem
+import com.hutapp.org.notes.hut.test.screenFronFigma.model.ModelIdem
 
 class MyRecyclerAdapter(
     private val listForDashboard: List<ModelIdem>,
